@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('./colors.css');
+@import url('./reusable.css');
+@import url('./containers.css');
+
+
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    margin: 0;
+    /* 1 */
+    line-height: inherit;
+    /* 2 */
+    color: var(--color-text-primary)
+}
+
+/* Navigation */
+.navigation {
+    width: 15%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    align-items: center;
+    border-right: 1px solid var(--color-details-primary-50);
+}
+
+.logo-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid var(--color-details-primary-50);
+}
+
+.logo {
+    height: 85%;
+    width: auto;
+}
+
+.navigation--items-container {
+    width: 100%;
+    height: 100%;
+    padding-top: 10%;
+}
+
+.navigation--bottom-container {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.navigation--bottom-container span {
+    width: 50%;
+    height: 100%;
+    padding: 5% 0 1% 0;
+    background-color: var(--color-details-primary-20);
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 0.8rem;
+    cursor: pointer;
+
+}
+
+.navigation--bottom-container span:not(:last-child) {
+    border-right: 1px solid var(--color-details-primary-50);
+
+}
+
+.navigation--bottom-container span i {
+    padding-right: 0.5rem;
+    padding-top: 0.15rem;
+    font-size: 0.8rem;
+
+}
+
+.navigation--item {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    width: 90%;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 1%;
+}
+
+.navigation--item:hover,
+:visited,
+:active,
+:link {
+    color: var(--color-text-primary)
+}
+
+.navigation--icon {
+    width: 1.5rem;
+    padding-right: 5%;
+}
+
+.navigation--item-text {
+    font-weight: 600;
+    margin-right: auto;
+}
+
+.navigation--active {
+    background-color: var(--color-details-primary-20);
+    border-radius: 0 10px 10px 0;
+}
+
+.navigation--item:hover {
+    border-radius: 0 10px 10px 0;
+    background-color: var(--color-details-primary-20);
+}
+
