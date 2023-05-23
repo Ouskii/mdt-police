@@ -1,0 +1,108 @@
+.tablet {
+    width: 90vw;
+    height: 90vh;
+    background: var(--color-app-bar);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    user-select: none;
+}
+
+.content {
+    width: 85%;
+    height: 100%;
+    background-color: var(--color-app-bar);
+    border-radius: 10px;
+}
+
+.content--top {
+    width: 100%;
+    height: 10%;
+    border-radius: 0 10px 0 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--color-details-primary-50);
+}
+
+.content-container {
+    width: 95%;
+    height: 85%;
+    padding: 1% 2.5%;
+
+}
+
+.content-container-main {
+    display: flex;
+    width: 100%;
+    height: 90%;
+}
+
+.col-1-of-2 {
+    display: flex;
+    width: 48.5%;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.col-1-of-3 {
+    display: flex;
+    width: 32%;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.col-1-of-3-no-wrap {
+    display: flex;
+    width: 32%;
+    height: 100%;
+}
+
+.col-2-of-3 {
+    display: flex;
+    width: 64%;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.col-1-of-4 {
+    display: flex;
+    width: 24%;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.col-3-of-4 {
+    display: flex;
+    width: 75%;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.container-small {
+    width: 47%;
+    height: 20%;
+}
+
+.container-large {
+    width: 100%;
+    height: 25%;
+}
+
+.container-large-height-small {
+    width: 99%;
+    height: 10%;
+}
+
+.container-table-samll {
+    width: 100%;
+    height: 47.5%;
+}
+
+.container-h-60 {
+    width: 100%;
+    height: 70%;
+}
