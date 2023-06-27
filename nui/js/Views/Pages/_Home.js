@@ -1,39 +1,39 @@
+import { Getters } from "../../Handlers/DataHandler.js"
+import { TopContainer } from "../Components/TopContainer.js"
+import { PageHeaderComponent } from '../Components/PageHeaderComponent.js'
 
 export function _Home(){
-    
+    const Counters  = Getters.GetConters()
+    const AccountData = Getters.GetAccountData()
     return `
-    <div class="content--top">
-    ${true ? `<div class="content--top-button-back"><i class="fa-solid fa-caret-left"></i></div>` : ``}
-    <div class="content--top-personal-text"> <span>$asd </span> <span>$chuj chuj</span> </div>
-    }
-    </div>
+        ${TopContainer(false, AccountData, "Witaj" )}
         <div class="content-container display-f-c">
-            
+        ${PageHeaderComponent("Dashboard", "Witaj w systemie Los Santos Police Department", false, {} )}
             <div class="content-container-main"> 
                 <div class="col-1-of-2 mgr-3">
                     <div class="container-small mg-right-5 default-border display-f-c">
                         <span class="stats-title">Mieszkańców</span>
-                        <span class="stats-count">$0</span>
+                        <span class="stats-count">${Counters.citizenCount.count}</span>
                     </div>
                     <div class="container-small default-border display-f-c">
                         <span class="stats-title">Pojazdów</span>
-                        <span class="stats-count">$0</span>
+                        <span class="stats-count">${Counters.vehicleCount.count}</span>
                     </div>
                     <div class="container-large default-border display-f-c">
                         <span class="stats-title pd-l-5 pd-t-3 display-f-c">Wystawione Wyroki <span class="pd-t-1">Statystyka wystawionych wyroków i mandatów</span></span>
                         <div class="display-f">
-                            <span class="stats-count display-f-c pd-l-5 pd-t-2">$0 <span>W dniu</span></span>
-                            <span class="stats-count display-f-c pd-l-5 pd-t-2">$0<span>W tygodniu</span></span>
-                            <span class="stats-count display-f-c pd-l-5 pd-t-2">$0<span>W miesiącu</span></span>
-                            <span class="stats-count display-f-c pd-l-5 pd-t-2">$0 <span>W kwartale</span></span>
-                            <span class="stats-count display-f-c pd-l-5 pd-t-2">$0 <span>W roku</span></span>
+                            <span class="stats-count display-f-c pd-l-5 pd-t-2">${Counters.dayCount.count} <span>W dniu</span></span>
+                            <span class="stats-count display-f-c pd-l-5 pd-t-2">${Counters.weekCount.count}<span>W tygodniu</span></span>
+                            <span class="stats-count display-f-c pd-l-5 pd-t-2">${Counters.monthCount.count}<span>W miesiącu</span></span>
+                            <span class="stats-count display-f-c pd-l-5 pd-t-2">${Counters.quarterCount.count} <span>W kwartale</span></span>
+                            <span class="stats-count display-f-c pd-l-5 pd-t-2">${Counters.yearCount.count} <span>W roku</span></span>
                         </div>
 
                     </div>
                     <div class="container-table-samll mgt-auto default-border display-f-c">
                         <span class="stats-title pd-l-5 pd-t-2 display-f-c">Poszukiwani Obywatele <span class="pd-t-1">Ostatnio wystawione poszukiwania na obywatela</span></span>
                         <div class="table-container pd-t-2">
-                            <table>
+                            <table id="wanted-civilian">
                                 <thead>
                                     <tr>
                                         <td>Imię i Nazwisko</td>
@@ -42,26 +42,7 @@ export function _Home(){
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>Bodzio Monster</td>
-                                        <td>26</td>
-                                        <td><span class="status-nonactive">Poszukiwany </span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Bodzio Monster</td>
-                                        <td>26</td>
-                                        <td><span class="status-nonactive">Poszukiwany </span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Bodzio Monster</td>
-                                        <td>26</td>
-                                        <td><span class="status-nonactive">Poszukiwany </span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Bodzio Monster</td>
-                                        <td>26</td>
-                                        <td><span class="status-nonactive">Poszukiwany </span></td>
-                                    </tr>
+                                    
                                 </tbody>
                             </table>
                         </div>
@@ -90,7 +71,7 @@ export function _Home(){
                     <div class="container-table-samll mgt-auto default-border display-f-c">
                         <span class="stats-title pd-l-5 pd-t-2 display-f-c">Poszukiwane Pojazdy <span class="pd-t-1">Ostatnio wystawione poszukiwania na samochody</span></span>
                         <div class="table-container pd-t-2">
-                            <table>
+                            <table id="wanted-cars">
                                 <thead>
                                     <tr>
                                         <td>Model</td>
@@ -100,37 +81,7 @@ export function _Home(){
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>Jester</td>
-                                        <td>Essen</td>
-                                        <td>Bodzio Monster</td>
-                                        <td><span class="status-nonactive"> Poszukiwany </span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Jester</td>
-                                        <td>Czternastka</td>
-                                        <td>Bodzio Monster</td>
-                                        <td><span class="status-nonactive"> Poszukiwany </span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Jester</td>
-                                        <td>Czternastka</td>
-                                        <td>Bodzio Monster</td>
-                                        <td><span class="status-nonactive"> Poszukiwany </span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Jester</td>
-                                        <td>Czternastka</td>
-                                        <td>Bodzio Monster</td>
-                                        <td><span class="status-nonactive"> Poszukiwany </span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Jester</td>
-                                        <td>Czternastka</td>
-                                        <td>Bodzio Monster</td>
-                                        <td><span class="status-nonactive"> Poszukiwany </span></td>
-                                    </tr>
-                        
+                                    
                                 </tbody>
                             </table>
                         </div>

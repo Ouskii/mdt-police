@@ -1,0 +1,115 @@
+
+/* DISPATCH */
+
+#map { height: 100%; width: 100%; }
+
+.container-units{
+    background-color: var(--color-grey-35);
+    border-radius: 5px;  
+}
+
+.units-holder{
+    padding: 2% 5% ;
+    gap: 5%;
+}
+
+
+.units-header{
+    font-size: 0.8rem;
+    padding: 2% 5% ;
+    align-items: center;
+    height: 5%;
+}
+
+
+
+.units-header--add{
+    margin-left: auto; 
+    font-size: 1.6rem;
+}
+
+
+
+.units-component-container{
+    background-color: var(--color-details-primary-20);
+    border-radius: 5px;
+    border: 1px solid var(--color-details-primary-65);
+    padding: 2%;
+    
+}
+
+.unit-component--edit {
+    margin-left: auto;
+    font-size: 1.2rem;
+}
+
+.unit-component-name {
+    font-size: 0.8rem;
+    background-color: #127826;
+    border-radius: 15rem;
+    padding: 2% 5%;
+    font-weight: 600;
+}
+.units-officer {
+    align-items: center;
+    gap: 5%;
+    font-size: 0.9rem;
+    padding: 1% 0;
+}
+
+
+.unit-component--car{
+    align-items: center;
+    gap: 5%;
+    font-size: 0.9rem;
+    padding: 1% 0;
+}
+
+.container-calls{
+    background-color: var(--color-grey-35);
+    border-radius: 5px; 
+}
+.calls-header {
+    font-size: 0.8rem;
+    padding: 2% 5% ;
+    align-items: center;
+    height: 5%;
+ 
+}
+
+.calls-item--container {
+    background-color: var(--color-details-primary-20);
+    border-radius: 5px;
+    border: 1px solid var(--color-details-primary-65);
+    padding: 2%;
+    margin-bottom: 2%;
+   
+}
+
+.calls-holder{
+    width: 90%;
+    height: 90%;
+    padding: 2% 5% ;
+    gap: 5%;
+    overflow:scroll;
+}
+
+.calls-item--header{
+    align-items: center;
+    font-size: 0.8rem;
+}
+.calls-item--header span{
+   margin-left: 5%;
+}
+
+.calls-item--callsign{
+    font-size: 0.8rem;
+    background-color: rgb(30,48,80);
+    border-radius: 15rem;
+    padding: 2% 5%;
+    font-weight: 600;
+}
+
+.calls-item-info{
+    padding: 2%;
+}

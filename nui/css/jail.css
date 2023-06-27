@@ -1,0 +1,109 @@
+/* Jail */
+.category-container {
+    border-left: 1px solid var(--color-details-primary-50);
+    height: 90%;
+}
+
+.category-item {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    padding-left: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 80%;
+    margin-bottom: 1%;
+}
+
+.category-item:hover {
+    background-color: var(--color-details-primary-20);
+    border-radius: 0 10px 10px 0;
+}
+
+.active {
+    background-color: var(--color-details-primary-20);
+    border-radius: 0 10px 10px 0;
+}
+
+.content-second-container {
+    width: 100%;
+    height: 80%;
+    margin-top: 2%;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    overflow: scroll;
+    align-content: flex-start;
+}
+
+.footer-container {
+    height: 8%;
+}
+
+
+.input-container {
+    position: relative;
+    width: 25%;
+}
+
+.form__field {
+    font-family: inherit;
+    width: 80%;
+    border: 0;
+    border-bottom: 2px solid var(--color-details-primary-50);
+    outline: 0;
+    font-size: 1rem;
+    color: #fff;
+    padding: 1.5rem 0 0 0;
+    background: transparent;
+
+}
+
+.form__label {
+    position: absolute;
+    top: 0;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: var(--color-text-primary);
+}
+
+.tariff-item {
+    width: 32%;
+    height: 30%;
+    margin-top: 1%;
+    margin-left: 0.8%;
+    align-items: center;
+}
+
+.tariff-quantity {
+    font-size: 2rem;
+}
+
+.tariff-title {
+    text-align: center;
+    font-weight: 600;
+}
+
+.tariff-prices {
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+}
+
+.tariff-buttons {
+    height: 20%;
+    width: 70%;
+    padding-top: 2%;
+    justify-content: center;
+}
+
+.tariff-button {
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.button-increse {
+    background-color: var(--color-details-primary);
+}

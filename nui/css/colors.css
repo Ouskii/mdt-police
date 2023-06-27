@@ -4,7 +4,7 @@
 
     --color-app-bar: rgba(21, 21, 21, 0.99);
     --color-background: rgba(30, 30, 30, 0.99);
-    --color-details-primary: rgb(115, 94, 139);
+    --color-details-primary: rgb(25, 113, 194);
     --color-grey: rgba(42, 42, 42, 0.99);
     --color-grey-20: rgba(42, 42, 42, 0.2);
     --color-grey-25: rgba(42, 42, 42, 0.25);
@@ -16,11 +16,12 @@
     --color-black-35: rgb(12, 12, 12, 0.35);
     --color-black-50: rgb(12, 12, 12, 0.5);
     --color-black-65: rgb(12, 12, 12, 0.65);
-    --color-details-primary-20: rgb(115, 94, 139, 0.2);
-    --color-details-primary-25: rgb(115, 94, 139, 0.25);
-    --color-details-primary-35: rgb(115, 94, 139, 0.35);
-    --color-details-primary-50: rgb(115, 94, 139, 0.5);
-    --color-details-primary-65: rgb(115, 94, 139, 0.65);
+    --color-details-primary-20: rgb(25, 113, 194, 0.2);
+    --color-details-primary-25: rgb(25, 113, 194, 0.25);
+    --color-details-primary-35: rgb(25, 113, 194, 0.35);
+    --color-details-primary-50: rgb(25, 113, 194, 0.5);
+    --color-details-primary-65: rgb(25, 113, 194, 0.65);
+
 
 
 }

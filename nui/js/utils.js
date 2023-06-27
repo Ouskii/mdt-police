@@ -1,4 +1,4 @@
-export let utilsManager = {
+export const utilsManager = {
     addChild(parentIdentifier, childContent) {
         const parent = document.querySelector(parentIdentifier);
         if (parent) {
@@ -15,4 +15,16 @@ export let utilsManager = {
             console.error("could not find such html element: " + parentIdentifier);
         }
     },
+    parseDate(date){
+        const dateFormat = new Date(date)
+        let parsedDate = dateFormat.getDate()+
+           "/"+(dateFormat.getMonth()+1)+
+           "/"+dateFormat.getFullYear()+
+           " "+dateFormat.getHours()+
+           ":"+dateFormat.getMinutes()+
+           ":"+dateFormat.getSeconds();
+    
+        return parsedDate       
+    }
+
 };

@@ -1,6 +1,6 @@
-
+import { Getters } from "../../Handlers/DataHandler.js"
 export function _Layout() {
-    const permision = 0
+    const Account = Getters.GetAccountData()
     return `
     <div class="tablet" >
         <div class="navigation display-f-c ">
@@ -24,7 +24,7 @@ export function _Layout() {
                     <i class="fa-solid fa-handcuffs navigation--icon"> </i>
                     <span class="navigation--item-text"> WIEZIENIE </span>
                 </div>
-                ${permision <= 1 ? `
+                ${Account.account_acces <= 1 ? `
                 <div class="navigation--item " id="tariffedit">
                     <i class="fa-solid fa-book-journal-whills navigation--icon"> </i>
                     <span class="navigation--item-text"> EDYCJA TARYFIKATORA </span>
@@ -32,13 +32,13 @@ export function _Layout() {
                 ` : ``}
                 <div class="navigation--item " id="dispatch">
                     <i class="fa-solid fa-people-group navigation--icon"> </i>
-                    <span class="navigation--item-text"> PATROLE </span>
+                    <span class="navigation--item-text"> DISPATCH </span>
                 </div>
                 <div class="navigation--item " id="notes">
                     <i class="fa-regular fa-note-sticky navigation--icon"> </i>
                     <span class="navigation--item-text"> NOTATKI </span>
                 </div>
-                 ${permision <= 1 ? `
+                 ${Account.account_acces <= 1 ? `
                 <div class="navigation--item " id="accounts">
                     <i class="fa-solid fa-user-gear navigation--icon"> </i>
                     <span class="navigation--item-text"> UŻYTKOWNICY </span>
